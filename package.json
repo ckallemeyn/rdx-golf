@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "a golf app utilizing react-redux",
   "main": "webpack.config.js",
+  "babel" : {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/index.js",
+    "build": "webpack -d --watch"
   },
   "repository": {
     "type": "git",
