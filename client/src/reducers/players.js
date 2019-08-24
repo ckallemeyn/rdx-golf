@@ -5,7 +5,7 @@ export default function players(state = {}, action) {
     case ADD_PLAYER :
       return {
         ...state,
-        ...action.player
+        player: action.player
       }
     default:
       return state;
